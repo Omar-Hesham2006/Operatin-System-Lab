@@ -6,7 +6,6 @@ INTERVAL ?= 5
 
 all: run
 
-# Pre-build step
 setup:
 	mkdir -p $(MALICIOUS_DIR) $(DIR)
 	chmod +x antivirusd.sh restore.sh antivirus-cron.sh
