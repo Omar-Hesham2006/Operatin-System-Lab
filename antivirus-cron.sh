@@ -1,6 +1,4 @@
 #!/bin/bash
-# antivirus-cron.sh - one-shot scan, run by cron
-# Usage: antivirus-cron.sh dir malicious_dir   (use ABSOLUTE paths)
 
 FLAGGED_EXTENSIONS=(.exe .bat .vbs .scr .ps1)
 FLAGGED_KEYWORDS=(virus trojan malware worm ransomware)
@@ -45,7 +43,6 @@ scan() {
     done
 }
 
-# Single pass instead of a loop
 if [ ! -f "$LAST" ]; then
     scan
     ls -l "$DIR" > "$LAST"
