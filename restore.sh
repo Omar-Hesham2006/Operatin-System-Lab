@@ -1,6 +1,4 @@
 #!/bin/bash
-# restore.sh - review quarantined files
-# Usage: restore.sh dir malicious_dir
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 WHITELIST="$SCRIPT_DIR/whitelist.txt"
